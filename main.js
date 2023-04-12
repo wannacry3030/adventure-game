@@ -82,5 +82,5 @@ function selectOption(event) {
 
 // start the game
 updateProgress();
-updateStory("Bem vindo ao jogo, escolha cuidadosamente sua resposta!.");
+updateStory("Bem vindo ao jogo, escolha cuidadosamente sua resposta!");
 updateOptions(["Option 1", "Option 2", "Option 3"]);
