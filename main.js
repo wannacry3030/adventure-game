@@ -37,31 +37,25 @@ function selectOption(event) {
       // update progress and story
       progress += 25;
       updateProgress();
-      updateStory(
-        "Você escolheu a opção 1. Infelizmente, você é pego pela polícia enquanto tentava hackear um caixa eletrônico. Fim de jogo."
-      );
+      updateStory("Você escolheu a opção 1. Este é o fim do jogo.");
       updateOptions([]);
       break;
     case "option-2":
       // update progress and story
       progress += 50;
       updateProgress();
-      updateStory(
-        "Você escolheu a opção 2. Você se junta a uma gangue de rua e começa a realizar trabalhos sujos para eles. Fim de jogo."
-      );
+      updateStory("Você escolheu a opção 2. Este é o fim do jogo.");
       updateOptions([]);
       break;
     case "option-3":
       // update progress and story
       progress += 75;
       updateProgress();
-      updateStory(
-        "Você escolheu a opção 3. Você decide usar suas habilidades de hackeamento para invadir a base de dados de uma megacorporação e roubar informações valiosas. Mas antes de começar, você precisa escolher o tipo de ferramentas que vai usar:"
-      );
+      updateStory("Você escolheu a opção 3. O que você vai fazer a seguir?");
       updateOptions([
-        "Ferramentas de hackeamento convencionais",
-        "Ferramentas de hackeamento avançadas",
-        "Ferramentas de hackeamento experimental",
+        "Hackear o sistema de segurança",
+        "Entrar no bar próximo para obter informações",
+        "Seguir em frente sem parar",
       ]);
       break;
     case "option-3-1":
@@ -69,7 +63,7 @@ function selectOption(event) {
       progress += 10;
       updateProgress();
       updateStory(
-        "Você escolheu as ferramentas de hackeamento convencionais. Você consegue invadir a base de dados, mas as informações que encontra não são tão valiosas quanto você esperava. Fim de jogo."
+        "Você hackeou o sistema de segurança com sucesso e descobriu a localização do seu objetivo. Parabéns, você venceu o jogo!"
       );
       updateOptions([]);
       break;
@@ -78,7 +72,7 @@ function selectOption(event) {
       progress += 20;
       updateProgress();
       updateStory(
-        "Você escolheu as ferramentas de hackeamento avançadas. Com elas, você consegue invadir a base de dados e encontrar informações valiosas. Você as vende para um grupo de ativistas que estão lutando contra as megacorporações. Fim de jogo."
+        "Você encontrou um contato valioso no bar e obteve informações cruciais para a sua missão. Parabéns, você venceu o jogo!"
       );
       updateOptions([]);
       break;
@@ -87,8 +81,12 @@ function selectOption(event) {
       progress += 30;
       updateProgress();
       updateStory(
-        "Você escolheu as ferramentas de hackeamento experimental. Elas funcionam bem, mas você é descoberto pela equipe de segurança da megacorporação."
+        "Você seguiu em frente sem parar e acabou se perdendo nas ruas escuras de Gama City. Infelizmente, você perdeu o jogo."
       );
+      updateOptions([]);
+      break;
+    default:
+      break;
   }
 }
 
@@ -97,4 +95,4 @@ updateProgress();
 updateStory(
   "Bem-vindo ao mundo cyberpunk de Gama City. Luzes brilhantes de neon iluminam as ruas escuras e sujas, anunciando produtos de alta tecnologia e serviços ilegais. A cidade é controlada por megacorporações que detêm todo o poder e riqueza, enquanto a maioria dos cidadãos vive em condições precárias."
 );
-updateOptions(["Option 1", "Option 2", "Option 3"]);
+updateOptions(["Opção 1", "Opção 2", "Opção 3"]);
