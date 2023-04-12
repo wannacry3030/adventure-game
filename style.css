@@ -1,14 +1,14 @@
 /* collor palette
  #00ff9f #00b8ff #001eff #bd00ff #d600ff*/
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(
-    315deg,
-    hsla(290, 100%, 50%, 1) 0%,
-    hsla(291, 100%, 10%, 1) 100%
-  );
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #50b9cc 0%, #bf2e94 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #game-container {
