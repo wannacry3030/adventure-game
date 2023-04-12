@@ -1,5 +1,14 @@
 /* collor palette
  #00ff9f #00b8ff #001eff #bd00ff #d600ff*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
