@@ -49,6 +49,7 @@ h1 {
 #options li {
   display: inline-block;
   margin: 0 20px;
+  font-size: 1.9em;
 }
 
 #options a {

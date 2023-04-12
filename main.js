@@ -82,5 +82,7 @@ function selectOption(event) {
 
 // start the game
 updateProgress();
-updateStory("Bem vindo ao jogo, escolha cuidadosamente sua resposta!");
+updateStory(
+  "Bem-vindo ao mundo cyberpunk de Gama City. Luzes brilhantes de neon iluminam as ruas escuras e sujas, anunciando produtos de alta tecnologia e serviços ilegais. A cidade é controlada por megacorporações que detêm todo o poder e riqueza, enquanto a maioria dos cidadãos vive em condições precárias."
+);
 updateOptions(["Option 1", "Option 2", "Option 3"]);
