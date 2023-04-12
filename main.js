@@ -51,19 +51,22 @@ function selectOption(event) {
       progress += 50;
       updateProgress();
       updateStory(
-        "Você decide começar a investigar a megacorporação GenoTech para obter informações úteis que possam ajudar em sua missão de roubar os dados corporativos. Você começa a pesquisar sobre a empresa na internet, procurando por notícias, informações financeiras e relatórios de mercado. Você descobre que a GenoTech é uma das maiores empresas de biotecnologia do mundo, especializada em pesquisa genética e produção de medicamentos avançados. No entanto, também há muitas críticas e controvérsias em torno da empresa, com alegações de experimentação ilegal em seres humanos e manipulação genética ilegal. Você decide que precisa de mais informações e começa a traçar um plano para invadir a sede da GenoTech e obter os dados que precisa."
+        "Você decide começar a investigar a megacorporação GenoTech para obter informações úteis que possam ajudar em sua missão de roubar os dados corporativos. Você começa a pesquisar sobre a empresa na internet, procurando por notícias, informações financeiras e relatórios de mercado. Você descobre que a SayonaraTech é uma das maiores empresas de biotecnologia do mundo, especializada em pesquisa genética e produção de medicamentos avançados. No entanto, também há muitas críticas e controvérsias em torno da empresa, com alegações de experimentação ilegal em seres humanos e manipulação genética ilegal. Você decide que precisa de mais informações e começa a traçar um plano para invadir a sede da GenoTech e obter os dados que precisa."
       );
       updateOptions([
         "Hackear o sistema de segurança",
-        "Infiltrar-se na GenoTech",
+        "Infiltrar-se na SayonaraTech",
         "Buscar informações em outras fontes",
       ]);
       break;
+
     case "option-3":
       // update progress and story
       progress += 75;
       updateProgress();
-      updateStory("Você escolheu a opção 3. O que você vai fazer a seguir?");
+      updateStory(
+        "Você decide que precisa de ajuda para completar sua missão. Você pega seu comunicador e liga para um antigo colega que trabalhou na GenoTech antes de ser demitido. Ele atende e você explica sua situação, pedindo ajuda ou informações que possam ajudá-lo a roubar os dados corporativos. Seu amigo fica um pouco hesitante, mas concorda em ajudar. Ele diz que vai enviar informações para o seu comunicador assim que as conseguir, e que você deve se manter em contato com ele. Você agradece e desliga, sentindo-se um pouco mais confiante em sua missão."
+      );
       updateOptions([
         "Hackear o sistema de segurança",
         "Entrar no bar próximo para obter informações",
