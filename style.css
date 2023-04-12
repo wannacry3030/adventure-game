@@ -37,7 +37,8 @@ h1 {
 
 #story {
   font-size: 1.9em;
-  margin-top: 50px;
+  margin: 50px;
+  text-align: center;
 }
 
 #options {

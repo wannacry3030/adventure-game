@@ -34,12 +34,18 @@ function selectOption(event) {
   const optionId = event.target.id;
   switch (optionId) {
     case "option-1":
-      // update progress and story
       progress += 25;
       updateProgress();
-      updateStory("Você escolheu a opção 1. Este é o fim do jogo.");
-      updateOptions([]);
+      updateStory(
+        "Você começa a olhar em volta do quarto em busca de uma saída. Há uma janela alta, mas ela está trancada e parece resistente. Na parede oposta, há um painel de controle que controla a porta do quarto, mas você não tem a senha. O que você faz agora?"
+      );
+      updateOptions([
+        "Tentar forçar a janela",
+        "Procurar por pistas no quarto",
+        "Pedir ajuda através da porta fechada",
+      ]);
       break;
+
     case "option-2":
       // update progress and story
       progress += 50;
@@ -58,6 +64,7 @@ function selectOption(event) {
         "Seguir em frente sem parar",
       ]);
       break;
+
     case "option-3-1":
       // update progress and story
       progress += 10;
@@ -93,6 +100,10 @@ function selectOption(event) {
 // start the game
 updateProgress();
 updateStory(
-  "Bem-vindo ao mundo cyberpunk de Gama City. Luzes brilhantes de neon iluminam as ruas escuras e sujas, anunciando produtos de alta tecnologia e serviços ilegais. A cidade é controlada por megacorporações que detêm todo o poder e riqueza, enquanto a maioria dos cidadãos vive em condições precárias."
+  "Bem-vindo ao mundo cyberpunk de Gama City. Luzes brilhantes de neon iluminam as ruas escuras e sujas, anunciando produtos de alta tecnologia e serviços ilegais. A cidade é controlada por megacorporações que detêm todo o poder e riqueza, enquanto a maioria dos cidadãos vive em condições precárias. Você acorda em um quarto sujo e mal iluminado, sem lembrar de como chegou lá. Olhando em volta, você vê apenas uma janela pequena e uma porta trancada. Um bilhete deixado sobre a mesa diz: 'Você é um hacker. Seu próximo trabalho é recuperar dados corporativos altamente confidenciais da megacorporação GenoTech. Seja rápido e discreto, e você será recompensado generosamente. Mas cuidado, as consequências de falhar são graves'. Você se levanta, sentindo o peso da responsabilidade sobre seus ombros. Você tem uma missão a cumprir e pouco tempo para fazê-lo. O que você vai fazer agora?"
 );
-updateOptions(["Opção 1", "Opção 2", "Opção 3"]);
+updateOptions([
+  "Tentar encontrar uma saída do quarto",
+  "Investigar GenoTech",
+  "Contatar um aliado",
+]);
