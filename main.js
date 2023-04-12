@@ -50,8 +50,14 @@ function selectOption(event) {
       // update progress and story
       progress += 50;
       updateProgress();
-      updateStory("Você escolheu a opção 2. Este é o fim do jogo.");
-      updateOptions([]);
+      updateStory(
+        "Você decide começar a investigar a megacorporação GenoTech para obter informações úteis que possam ajudar em sua missão de roubar os dados corporativos. Você começa a pesquisar sobre a empresa na internet, procurando por notícias, informações financeiras e relatórios de mercado. Você descobre que a GenoTech é uma das maiores empresas de biotecnologia do mundo, especializada em pesquisa genética e produção de medicamentos avançados. No entanto, também há muitas críticas e controvérsias em torno da empresa, com alegações de experimentação ilegal em seres humanos e manipulação genética ilegal. Você decide que precisa de mais informações e começa a traçar um plano para invadir a sede da GenoTech e obter os dados que precisa."
+      );
+      updateOptions([
+        "Hackear o sistema de segurança",
+        "Infiltrar-se na GenoTech",
+        "Buscar informações em outras fontes",
+      ]);
       break;
     case "option-3":
       // update progress and story
