@@ -1,7 +1,14 @@
+/* collor palette
+ #00ff9f #00b8ff #001eff #bd00ff #d600ff*/
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background: linear-gradient(
+    315deg,
+    hsla(290, 100%, 50%, 1) 0%,
+    hsla(291, 100%, 10%, 1) 100%
+  );
 }
 
 #game-container {
